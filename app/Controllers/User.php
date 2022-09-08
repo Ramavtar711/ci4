@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controllers;
-
 use App\Models\UserModel;
 use CodeIgniter\RESTful\ResourceController;
 use Exception;
@@ -178,7 +177,7 @@ class User extends ResourceController
         $authHeader = $authHeader->getValue();
         $token = $authHeader;
 
-
+  
         try {
 
         $userModel = new UserModel();
